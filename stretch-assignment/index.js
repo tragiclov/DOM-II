@@ -40,4 +40,17 @@
     window.addEventListener('keydown', ()=>{
         alert('Click the button on the bottom of the page to schedule a time to meet!!')
     });
+
+    bod.addEventListener('keydown', ()=>{
+        bod.style.backgroundColor = 'blue'
+    })
+
+    window.addEventListener('scroll', ()=>{
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = window.scrollY;
+
+        if(Math.floor(scrolled) === scrollable){
+            alert('you reached the bottom');
+        }
+    });
     
