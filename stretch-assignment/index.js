@@ -13,6 +13,16 @@
         button.addEventListener('mouseleave', () =>{
             button.style.backgroundColor = 'white'
             button.style.color = 'green'
+            console.log('Lokk at you!')
         })
-    })
+    });
+
+    aTags.forEach(tag =>{
+        tag.addEventListener('mouseover', ()=>{
+            tag.style.color = 'blue'
+        })
+        tag.addEventListener('mouseleave', ()=>{
+            tag.style.color = 'black'
+        })
+    });
     
