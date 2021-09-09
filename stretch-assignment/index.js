@@ -25,4 +25,19 @@
             tag.style.color = 'black'
         })
     });
+
+    pictureHeightlight.forEach(pic =>{
+        pic.addEventListener('dbclick', ()=>{
+            pic.style.borderWidth = '5px'
+            pic.style.borderStyle = 'solid'
+            pic.style.borderColor = 'blue'
+        })
+        pic.addEventListener('mouseleave', ()=>{
+            pic.style.borderWidth = '0px'
+        })
+    });
+
+    window.addEventListener('keydown', ()=>{
+        alert('Click the button on the bottom of the page to schedule a time to meet!!')
+    });
     
